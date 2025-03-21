@@ -1,0 +1,24 @@
+- Steps to create a function
+1. Select the div where the material needs to be inserted
+2. Plan how the whole thing will look like, but in all probablity:
+2.1 The entire thing will be covered in a div
+2.1.1 An element which is a "div" needs to be created
+2.1.2 Add the CSS for that specific div
+2.2 Add the innerHTML for that div
+2.3 Configure the CSS accordingly
+
+- Steps to create a SPA (Single Page application)
+
+  - What is a single page application?
+  The application displaying information on a single page, where the complete information is present on one page only.
+  - The way that one navigates the page is by clicking on some buttons which intiates the navigation of page vertically, without changing the core url.
+  - The essential thing is to clear content when needed, so that the scrolling can only show one single thing to the user.
+
+- How is this enabled here?
+  - have eventListeners on the buttons, as some buttom is clicked:
+    - clear the content that was initially on the page
+    - populate the new content
+
+- Components needed for this change:
+  - A function that clears the content from the page or the section where the page is loaded
+  - A master function that shows default page at the same time clearning other content that should be visible on the page (To establish the initial state of the application)

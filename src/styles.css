@@ -1,0 +1,369 @@
+body {
+  background: linear-gradient(to right, #e0f7fa, #e0f7fa);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #002d5b;
+  font-weight: bold;
+  font-size: 30px;
+  border: transparent;
+  cursor: pointer;
+  transition:
+    color 0.3s,
+    border-bottom 0.3;
+}
+
+button:hover {
+  color: #f0ad4e;
+}
+.active-nav {
+  color: #f0ad4e;
+  border-bottom: 2px solid #f0ad4e;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #002d5b;
+}
+
+.hero-section {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+  gap: 10px;
+}
+
+.hero-half {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image styling as background */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.hero-half:hover .hero-image {
+  transform: scale(1.05);
+}
+
+/* Text overlay */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.hero-overlay h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.hero-overlay p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-half {
+    height: 300px;
+  }
+}
+
+/* Main container for the rewards section */
+.rewards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Heading styles */
+.rnr-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.rnr-heading h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.rnr-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f0ad4e; /* A gold/amber color for restaurant theme */
+}
+
+/* Description text styles */
+.rnr-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #555;
+}
+
+/* Award grid layout */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual award card styling */
+.award-Item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.award-Item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Award image styling */
+.award-Item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+/* Award name styling */
+.award-Item h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rnr-heading h2 {
+    font-size: 2rem;
+  }
+
+  .award-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .award-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rnr-heading h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Menu Container Styles */
+.menu-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Heading Styles */
+.menu-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-heading h2 {
+  font-size: 2.5rem;
+  color: #002d5b;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.menu-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f0ad4e;
+}
+
+/* Category Styles */
+.category {
+  margin-bottom: 2.5rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #002d5b;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0f7fa;
+}
+
+/* Menu Item Styles */
+.menu-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #e0f7fa;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #002d5b;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #002d5b;
+}
+
+.item-description {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.dietary-info {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+.featured-tag {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #f0ad4e;
+  font-style: italic;
+}
+
+/* Active navigation button */
+.active-nav {
+  color: #f0ad4e;
+  border-bottom: 2px solid #f0ad4e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-heading h2 {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .item-name,
+  .item-price {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 1rem;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-price {
+    margin-top: 0.5rem;
+  }
+}
+
+.rest-description {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.rest-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #002d5b;
+  margin: 0;
+}
