@@ -29,6 +29,6 @@ Showcase of restaurant achievements and recognitions
 
 *** Webpack
 
-** Planned changed
+** Planned changes
 
 *** TODO Add footer on all pages
