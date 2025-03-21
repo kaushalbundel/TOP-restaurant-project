@@ -1,0 +1,34 @@
+* Macchi Fry Restaurant Website
+
+This website is created as a project for [[https://www.theodinproject.com/dashboard][The Odin Project]]. This website is a responsive single-page restaurant website, featuring a home page, menu and rewards/recognition section. The live link of the website can be accessed [[https://kaushalbundel.github.io/TOP-restaurant-project/][*here*]].
+
+** Features
+
+*** Single Page Application (SPA)
+Dynamic content loading without page refresh
+
+*** Interactive Navigation
+Menu system with active page indicators
+
+*** Elegant UI
+A modern design with a focus on the dining experience
+
+*** Menu Display
+Structured menu with categories, prices, and special indicators
+
+*** Awards Section
+Showcase of restaurant achievements and recognitions
+
+** Stack
+
+*** HTML
+
+*** CSS
+
+*** JS
+
+*** Webpack
+
+** TODO
+
+*** Add footer on all pages
